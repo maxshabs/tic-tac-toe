@@ -13,19 +13,31 @@ A fully playable Tic-Tac-Toe game in Python featuring multiple levels of AI diff
    ```bash
    python tictactoe.py
    ```
-You will be prompted to select a difficulty level for Player X and Player O.
+4. You will be prompted to select a difficulty level for Player X and Player O.
+5. After each game, you'll have the option to play again or exit.
 
-After each game, you'll have the option to play again or exit.
+### 🧠 Difficulty Levels
 
-🧠 Difficulty Levels
-Name	Command	Description
-Human	human	You control the moves through keyboard input
-Easy	easy	AI picks random valid moves
-Medium	medium	AI tries to win if it can
-Hard	hard	AI tries to win or block the opponent from winning
-Very Hard	very hard	Classic minimax AI — plays perfectly assuming the opponent does too
-Impossible	impossible	Minimax AI with heuristic tie-breaking — prefers smarter-looking moves
-💡 The higher the difficulty, the less likely you are to win. Good luck beating “impossible”!
+- **Human** (`human`)  
+  You control the moves via keyboard input.
+
+- **Easy** (`easy`)  
+  AI chooses random valid moves.
+
+- **Medium** (`medium`)  
+  AI looks for winning moves, but doesn’t block the opponent.
+
+- **Hard** (`hard`)  
+  AI tries to win, or block the opponent if they are about to win.
+
+- **Very Hard** (`very hard`)  
+  Classic **minimax** AI — plays perfectly assuming the opponent does too.
+
+- **Impossible** (`impossible`)  
+  Minimax AI with **heuristic tie-breaking** — prefers smarter-looking moves to increase pressure.
+
+> 💡 *The higher the difficulty, the stronger the AI. “Impossible” is designed to be unbeatable.*
+
 
 🛠 Project Structure
 tictactoe.py — Main entry point and game loop
