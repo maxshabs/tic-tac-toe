@@ -39,13 +39,31 @@ A fully playable Tic-Tac-Toe game in Python featuring multiple levels of AI diff
 > 💡 *The higher the difficulty, the stronger the AI. “Impossible” is designed to be unbeatable.*
 
 
-🛠 Project Structure
-tictactoe.py — Main entry point and game loop
+### 📁 Project Structure
 
-player.py — Handles human player input
+- `tictactoe.py`  
+  Main entry point. Handles game loop, rendering, and user interaction.
 
-heuristic_ai.py — Rule-based AI logic (easy/medium/hard)
+- `player.py`  
+  Implements the human player interface (keyboard input and move validation).
 
-minmax.py — Minimax and heuristic-based AIs (very hard/impossible)
+- `heuristic_ai.py`  
+  Contains simple AI strategies:
+  - `random_ai`: picks a random move
+  - `winning_moves_ai`: looks for winning moves
+  - `winning_and_losing_moves_ai`: tries to win or block opponent
 
-utils.py — Shared functions: board generation, move logic, winner checking
+- `minmax.py`  
+  Implements advanced AI strategies:
+  - `minmax_ai`: perfect play using minimax algorithm
+  - `tie_breaking_minmax_ai`: adds heuristic scoring for smarter tie-breaking
+
+- `utils.py`  
+  Shared utility functions for move validation, win checking, board creation, etc.
+
+  ### 🙌 Credits
+
+This project was inspired by Robert Heaton's excellent tutorial:  
+**[Programming Projects for Advanced Beginners #3: Tic-Tac-Toe AI](https://robertheaton.com/2018/10/09/programming-projects-for-advanced-beginners-3-b/)**  
+His guide provided the foundation for building the game logic, AI strategies, and minimax implementation.
+
