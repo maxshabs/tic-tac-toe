@@ -61,7 +61,7 @@ A fully playable Tic-Tac-Toe game in Python featuring multiple levels of AI diff
 - `utils.py`  
   Shared utility functions for move validation, win checking, board creation, etc.
 
-  ### 🙌 Credits
+### 🙌 Credits
 
 This project was inspired by Robert Heaton's excellent tutorial:  
 **[Programming Projects for Advanced Beginners #3: Tic-Tac-Toe AI](https://robertheaton.com/2018/10/09/programming-projects-for-advanced-beginners-3-b/)**  
